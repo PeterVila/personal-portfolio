@@ -1,0 +1,54 @@
+@import "/src/components/sassStyles/variables";
+
+.hero {
+  justify-content: center;
+  padding-bottom: 1rem;
+  border: 1px solid red;;
+  &__text {
+    border: 1px solid red;
+    flex-basis: 60%;
+    align-items: center;
+    h3 {
+      color: red;
+      border: 1px solid black;
+    }
+    h2 {
+      color: blue;
+    }
+    h1 {
+      color: green;
+    }
+    &-buttons {
+      margin-left: 1rem;
+      button {
+        border-radius: 1rem;
+        border: 1px solid black;
+        margin: auto 0.5rem;
+        padding: 0.25rem 0.75rem;
+        cursor: pointer;
+        transition: background-color 0.5s, transform 0.1s;
+        &:hover {
+          background-color: rgb(74, 252, 213);
+          transform: scale(1.01)
+        }
+      }
+    }
+  }
+
+  &__image {
+    border: 1px solid red;
+    align-self: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    &__text {
+      padding-left: 2rem;
+    }
+  }
+}
