@@ -1,4 +1,6 @@
 @import "/src/components/sassStyles/variables";
+@import "/src/components/sassStyles/animations";
+
 // $default: #F6F5F5;
 // $default-med: #d2d3db;
 // $default-dark: #9394a5;
@@ -28,7 +30,7 @@
       color: $med-blue;
       font-size: 2rem;
       margin: 0.75rem 0;
-          animation: fadeIn ease-in-out 0.8s;
+      animation: fadeIn ease-in-out 0.8s;
 
     }
     &-buttons {
@@ -36,8 +38,8 @@
       animation: fadeIn ease-in-out 1s;
 
       button {
-        border-radius: 1rem;
-        border: none;
+        border-radius: 2rem;
+        border: 1px solid rgba(0, 0, 0, 0.267);
         color: $dark-blue;
         font-size: 1rem;
         font-weight: 600;
@@ -46,9 +48,9 @@
         box-shadow: 1px 1px 2px 1px rgba(3, 36, 85, 0.459);
         cursor: pointer;
         transition: background-color 0.5s, transform 0.1s;
-        background-color: $default;
+        background-color: $light-blue;
         &:hover {
-          background-color: $light-blue;
+          background-color: $hover;
           transform: scale(1.01)
         }
       }
@@ -73,14 +75,4 @@
       padding-left: 2rem;
     }
   }
-}
-
-@keyframes fadeIn {
-  0% {opacity:0; transform:translate((10%))}
-  100% {opacity:1; transform: translate((0));}
-}
-
-@keyframes fadeLeft {
-  0% {opacity:0; transform:translate((-10%))}
-  100% {opacity:1; transform: translate((0));}
 }

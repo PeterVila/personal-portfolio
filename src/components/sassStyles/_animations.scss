@@ -1,2 +1,11 @@
 // This partial stores the actual @keyframe CSS animations. It helps
 // to drastically reduce the size of component stylesheets.
+@keyframes fadeIn {
+  0% {opacity:0; transform:translate((10%))}
+  100% {opacity:1; transform: translate((0));}
+}
+
+@keyframes fadeLeft {
+  0% {opacity:0; transform:translate((-10%))}
+  100% {opacity:1; transform: translate((0));}
+}
