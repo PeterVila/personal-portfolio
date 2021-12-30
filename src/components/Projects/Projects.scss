@@ -1,10 +1,20 @@
+@import "/src/components/sassStyles/variables";
+// $default: #F6F5F5;
+// $default-med: #d2d3db;
+// $default-dark: #7d7e8d;
+// $light-blue: #4eebf7;
+// $med-blue: #1897b9;
+// $dark-blue: #276678;
+
 .projects {
-  background-color: rgb(214, 214, 214);
+  background-color: $default-med;
+  border-top: 2px solid rgba(2, 11, 34, 0.22);
+  border-bottom: 2px solid rgba(2, 11, 34, 0.22);
   h1 {
     text-align: center;
-    border: 1px solid blue;
-    padding: 1rem 0;
+    padding: 1.5rem 0 0;
     font-size: 2rem;
+    color: $dark-blue;
   }
   .project {
     display: flex;
@@ -14,7 +24,7 @@
       border-radius: 1rem;
       flex-basis: 475px;
       margin: 2rem auto;
-      background-color: honeydew;
+      background-color: $dark-blue;
       -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
       transition: transform 0.1s;
@@ -28,10 +38,12 @@
       p,
       h2,
       h3 {
-        margin: 1rem;
+        margin: 1.25rem;
+        color: $default;
       }
       p {
         font-size: 14px;
+        color: $default-med;
       }
       h2 {
         font-size: 1.25rem;
@@ -45,13 +57,14 @@
     }
     &__tech {
     display: inline-block;
-    border: 1px solid black;
-    margin: 0 0.4rem 1rem;
+    margin: 0 0.4rem 1.5rem;
     padding: 0.25rem 1.2rem;
     margin-left: 1.25rem;
     border-radius: 1rem;
-    background-color: rgb(102, 237, 255);
+    border: none;
+    background-color: $light-blue;
     font-size: 13px;
+    color: $dark-blue;
     }
     &__links {
       display: flex;
@@ -65,10 +78,11 @@
         font-weight: 600;
         transition: 0.1s background-color;
         border: none;
-        box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.8);
+        background-color: $default;
+        color: $dark-blue;
         &:hover {
           cursor: pointer;
-          background-color: cadetblue;
+          background-color: rgb(116, 246, 255);
         }
       }
     }

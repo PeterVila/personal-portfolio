@@ -1,39 +1,54 @@
 @import "/src/components/sassStyles/variables";
+// $default: #F6F5F5;
+// $default-med: #d2d3db;
+// $default-dark: #9394a5;
+// $light-blue: #b7eef8;
+// $med-blue: #1687A7;
+// $dark-blue: #276678;
 
 .hero {
   justify-content: center;
   padding: 2rem 0;
-  border: 1px solid red;
+  margin: 4rem auto;
   &__text {
-    border: 1px solid red;
     flex-basis: 60%;
     align-items: center;
     h3 {
-      color: red;
-      border: 1px solid black;
+      color: $dark-blue;
       font-size: 1.5rem;
       margin: 0.5rem auto;
+      animation: fadeIn ease-in-out 0.7s;
     }
     h2 {
-      color: blue;
+      color: $default-dark;
       font-size: 1.1rem;
+      animation: fadeIn ease-in-out 0.9s;
     }
     h1 {
-      color: green;
+      color: $med-blue;
       font-size: 2rem;
       margin: 0.75rem 0;
+          animation: fadeIn ease-in-out 0.8s;
+
     }
     &-buttons {
       margin-left: 1rem;
+      animation: fadeIn ease-in-out 1s;
+
       button {
         border-radius: 1rem;
-        border: 1px solid black;
-        margin: auto 0.5rem;
-        padding: 0.25rem 0.75rem;
+        border: none;
+        color: $dark-blue;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem;
+        padding: 0.75rem 3rem;
+        box-shadow: 1px 1px 2px 1px rgba(3, 36, 85, 0.459);
         cursor: pointer;
         transition: background-color 0.5s, transform 0.1s;
+        background-color: $default;
         &:hover {
-          background-color: rgb(74, 252, 213);
+          background-color: $light-blue;
           transform: scale(1.01)
         }
       }
@@ -41,10 +56,12 @@
   }
 
   &__image {
-    border: 1px solid red;
     align-self: center;
+    margin-right: 3rem;
+    animation: fadeLeft ease-out 1s;
     img {
       width: 100%;
+      border-radius: 50%;
     }
   }
 }
@@ -56,4 +73,14 @@
       padding-left: 2rem;
     }
   }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0; transform:translate((10%))}
+  100% {opacity:1; transform: translate((0));}
+}
+
+@keyframes fadeLeft {
+  0% {opacity:0; transform:translate((-10%))}
+  100% {opacity:1; transform: translate((0));}
 }
