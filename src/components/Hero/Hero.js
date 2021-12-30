@@ -11,11 +11,11 @@ const Hero = () => {
         />
       </div>
       <div className="hero__text">
-        <h3>Hi, there! I'm Peter Vila</h3>
+        <h3>Hello! I'm Peter Vila</h3>
         <h1>Full Stack Web Developer</h1>
         <h2>
-          I help people and brands reach their goals by designing and building
-          user-centric digital products and interactive experiences
+          I'm a Software Developer with a passion for technology, coding, and
+          creating digital art!
         </h2>
         <div className="hero__text-buttons">
           <button>LinkedIn</button>
