@@ -1,10 +1,17 @@
+import { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Projects from "./components/Projects/Projects";
 import Technical from "./components/Technical/Technical";
 import Tools from "./components/Tools/Tools";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
