@@ -1,12 +1,15 @@
 @import "/src/components/sassStyles/variables";
 
-.technical {
+.tools {
   border-bottom: 2px solid rgba(2, 11, 34, 0.22);
+  background-color: $default-med;
   padding-bottom: 4rem;
+  margin-bottom: 10rem;
   h1 {
     text-align: center;
-    margin: 2rem auto;
-    font-size: 2rem;
+    padding-top: 2rem;
+    margin: 0 auto 2rem;
+    font-size: 2.2rem;
   }
   .row {
     justify-content: center;
