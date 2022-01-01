@@ -6,19 +6,19 @@ const Navbar = () => {
       <h2 className="navbar-title">Peter Vila</h2>
       <ul className="navbar-list">
         <li className="navbar-list__item">
-          <a href="/">About Me</a>
+          <a href="#about">About Me</a>
         </li>
         <li className="navbar-list__item">
-          <a href="/">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li className="navbar-list__item">
-          <a href="/">Technical Skills</a>
+          <a href="#technical">Technical Skills</a>
         </li>
         <li className="navbar-list__item">
-          <a href="/">Tools</a>
+          <a href="#tools">Tools</a>
         </li>
         <li className="navbar-list__item">
-          <a href="/">Contact</a>
+          <a href="#contact" target="_self">Contact</a>
         </li>
       </ul>
     </nav>

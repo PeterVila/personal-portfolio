@@ -7,7 +7,11 @@
 // $dark-blue: #276678;
 
 nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
   display: flex;
+  z-index: 1;
   background-color: $dark-blue;
   color: $default;
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.8);

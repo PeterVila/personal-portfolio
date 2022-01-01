@@ -4,7 +4,7 @@ const Tools = () => {
   return (
     <div className="tools">
       <section className="container" data-aos="fade-up">
-        <h1>Tools</h1>
+        <h1 id="tools">Tools</h1>
         <div className="row">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" />

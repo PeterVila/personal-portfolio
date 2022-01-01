@@ -3,7 +3,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <section className="projects">
-      <h1 data-aos="fade-up">Projects</h1>
+      <h1 id="projects" data-aos="fade-up">Projects</h1>
       <div className="project container">
         <div className="project__card" data-aos="fade-up">
           <img src="https://i.gyazo.com/911d108d7b7136d4993bd34de14c4232.jpg" />

@@ -4,6 +4,7 @@ import Hero from './components/Hero/Hero';
 import Projects from "./components/Projects/Projects";
 import Technical from "./components/Technical/Technical";
 import Tools from "./components/Tools/Tools";
+import Contact from "./components/Contact/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,6 +20,7 @@ function App() {
       <Projects />
       <Technical />
       <Tools />
+      <Contact />
     </>
   );
 }
