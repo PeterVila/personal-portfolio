@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PeterVila/personal-portfolio/static/css/main.48711502.css",
+    "main.js": "/PeterVila/personal-portfolio/static/js/main.5711da56.js",
+    "static/media/social-litegif.gif": "/PeterVila/personal-portfolio/static/media/social-litegif.e28ba6e7f5b50f97e874.gif",
+    "index.html": "/PeterVila/personal-portfolio/index.html",
+    "main.48711502.css.map": "/PeterVila/personal-portfolio/static/css/main.48711502.css.map",
+    "main.5711da56.js.map": "/PeterVila/personal-portfolio/static/js/main.5711da56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48711502.css",
+    "static/js/main.5711da56.js"
+  ]
+}
