@@ -22,7 +22,6 @@
     justify-content: center;
     &__card {
       border-radius: 1rem;
-      flex-basis: 475px;
       margin: 1.5rem auto;
       background-color: $dark-blue;
       -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
@@ -31,8 +30,7 @@
       img {
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-        width: 475px;
-        height: 475px;
+        width: 100%;
         object-fit: fill;
         object-position: 50% 50%;
       }

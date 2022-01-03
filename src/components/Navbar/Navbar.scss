@@ -1,13 +1,8 @@
 @import "/src/components/sassStyles/variables";
-// $default: #F6F5F5;
-// $default-med: #d2d3db;
-// $default-dark: #9394a5;
-// $light-blue: #D3E0EA;
-// $med-blue: #1687A7;
-// $dark-blue: #276678;
 
 nav {
   position: -webkit-sticky; /* Safari */
+  width: 100%;
   position: sticky;
   top: 0;
   display: flex;
@@ -15,7 +10,7 @@ nav {
   background-color: $dark-blue;
   color: $default;
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.8);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   .navbar-title {
     text-align: center;
     width: calc(100% * (1/4));

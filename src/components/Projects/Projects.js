@@ -8,7 +8,7 @@ const Projects = () => {
         Projects
       </h1>
       <div className="project container">
-        <div className="project__card" data-aos="fade-up">
+        <div className="project__card column-half" data-aos="fade-up">
           <img src={socialGif} />
           <h2>Social-Lite</h2>
           <p>
@@ -44,7 +44,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="project__card" data-aos="fade-up">
+        <div className="project__card column-half" data-aos="fade-up">
           <img src="https://user-images.githubusercontent.com/42393951/143111026-f15628c1-9c1c-42b8-ba0c-45a8f648dfb4.gif" />
           <h2>Who's that Pokemon</h2>
           <p>
@@ -76,7 +76,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="project__card" data-aos="fade-up">
+        <div className="project__card column-half" data-aos="fade-up">
           <img src="https://i.gyazo.com/38087a6ab89491da6187f5ead6a312cd.png" />
           <h2>Code Journal</h2>
           <p>
