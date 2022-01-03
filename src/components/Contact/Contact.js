@@ -1,9 +1,9 @@
+import React from "react";
 import "./Contact.scss";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-
-  const sendEmail = e => {
+  const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
@@ -20,8 +20,8 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-      e.target.reset();
-  }
+    e.target.reset();
+  };
   return (
     <div className="contact container" data-aos="fade-up">
       <h1 id="contact">Contact me!</h1>

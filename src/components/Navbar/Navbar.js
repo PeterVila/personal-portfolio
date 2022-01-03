@@ -1,4 +1,5 @@
-import './Navbar.scss'
+import React from "react";
+import "./Navbar.scss";
 
 const Navbar = () => {
   return (
@@ -18,11 +19,13 @@ const Navbar = () => {
           <a href="#tools">Tools</a>
         </li>
         <li className="navbar-list__item">
-          <a href="#contact" target="_self">Contact</a>
+          <a href="#contact" target="_self">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

@@ -27,18 +27,36 @@
       -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
       transition: transform 0.1s;
+      height: 47rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: space-between;
+      &-img {
+        .animated {
+          position: absolute;
+          transition: 0.4s opacity;
+          left: 0;
+        }
+        .animated:hover {
+          opacity: 0;
+        }
+      }
       img {
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         width: 100%;
+        height: 26rem;
         object-fit: fill;
         object-position: 50% 50%;
       }
       p,
       h2,
       h3 {
-        margin: 1.25rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
         color: $default;
+        margin: 0;
       }
       p {
         font-size: 14px;
@@ -49,7 +67,8 @@
         color: $light-blue;
       }
       h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        color: $light-blue;
       }
       &:hover {
         transform: scale(1.02);
@@ -61,25 +80,28 @@
     justify-content: center;
     margin: 0 1rem 1rem;
       &-tech {
-        margin: 0.25rem 0.4rem;
-        padding: 0.25rem 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0.25rem 0.3rem;
+        padding: 0.1rem 1.5rem;
+        width: 30%;
         border-radius: 3rem;
         border: none;
         background-color: $light-blue;
         font-size: 13px;
         font-weight: 600;
         color: $dark-blue;
-        box-shadow: 1px 2px 2px 1px rgba(5, 27, 59, 0.897);
       }
     }
     &__links {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 1rem;
+      margin-bottom: 0.2rem;
       button {
         border-radius: 0.5rem;
+        margin: 0 1rem;
         flex-basis: 40%;
-        padding: 0.8rem 4.5rem;
+        padding: 0.5rem 3rem;
         font-size: 1.1rem;
         font-weight: 600;
         transition: 0.1s background-color;

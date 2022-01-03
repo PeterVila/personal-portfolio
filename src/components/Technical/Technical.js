@@ -1,3 +1,4 @@
+import React from "react";
 import "./Technical.scss";
 
 const Technical = () => {
@@ -20,6 +21,6 @@ const Technical = () => {
       </section>
     </div>
   );
-}
+};
 
 export default Technical;

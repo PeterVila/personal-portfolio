@@ -1,4 +1,5 @@
-import './Hero.scss';
+import React from "react";
+import "./Hero.scss";
 
 const Hero = () => {
   return (
@@ -27,24 +28,20 @@ const Hero = () => {
             target="_blank"
             href="https://github.com/PeterVila"
             rel="noreferrer"
-            >
-            <button>
-            GitHub
-            </button>
+          >
+            <button>GitHub</button>
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/peterdvila/"
             rel="noreferrer"
-            >
-            <button>
-            LinkedIn
-            </button>
+          >
+            <button>LinkedIn</button>
           </a>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
