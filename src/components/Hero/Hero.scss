@@ -9,11 +9,13 @@
 // $dark-blue: #276678;
 
 .hero {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 2rem 0;
-  margin: 2.5rem auto;
+  margin-bottom: 3rem;
   &__text {
-    flex-basis: 60%;
+    flex-basis: 75%;
     align-items: center;
     h3 {
       color: $dark-blue;
@@ -58,8 +60,9 @@
 
   &__image {
     align-self: center;
-    margin-right: 3rem;
     animation: fadeLeft ease-out 1s;
+    display: flex;
+    justify-content: center;
     img {
       width: 100%;
       border-radius: 50%;
@@ -70,6 +73,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;
+    flex-wrap: nowrap;
     &__text {
       padding-left: 2rem;
     }

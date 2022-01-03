@@ -8,11 +8,17 @@
     color: $dark-blue;
   }
   &__form {
-    display: flex;
-    justify-content: center;
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
     input[type="text"],
     input[type="email"] {
-      width: 100%;
       padding: 0.4rem;
       text-align: left;
     }
@@ -21,6 +27,7 @@
       border-radius: 5px;
       border: 1px solid grey;
       font-size: 13px;
+      width: 90%;
     }
     input[type="submit"] {
       border: none;
@@ -35,4 +42,21 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+.contact {
+  &__form {
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      div input,
+      div textarea{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
 }

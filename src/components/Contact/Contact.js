@@ -23,7 +23,7 @@ const Contact = () => {
       e.target.reset();
   }
   return (
-    <div className="contact" data-aos="fade-up">
+    <div className="contact container" data-aos="fade-up">
       <h1 id="contact">Contact me!</h1>
       <section className="container contact__form">
         <form onSubmit={sendEmail}>
