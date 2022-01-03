@@ -17,9 +17,30 @@ const Hero = () => {
           I'm a Software Developer with a passion for technology, coding, and
           creating digital art!
         </h2>
+        <h2>
+          I'm skilled in languages such as JavaScript (ES5 + ES6), React.js,
+          Node.js, Express, PostgreSQL, HTML, CSS and Sass. I'm intimately
+          familiar with tools like Git, Babel, npm, and Webpack.
+        </h2>
         <div className="hero__text-buttons">
-          <button>LinkedIn</button>
-          <button>Github</button>
+          <a
+            target="_blank"
+            href="https://github.com/PeterVila"
+            rel="noreferrer"
+            >
+            <button>
+            GitHub
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/peterdvila/"
+            rel="noreferrer"
+            >
+            <button>
+            LinkedIn
+            </button>
+          </a>
         </div>
       </div>
     </section>

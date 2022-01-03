@@ -9,3 +9,12 @@ $med-blue: #37b6da;
 $dark-blue: #255c8a;
 
 $hover: rgb(96, 250, 255);
+
+    a {
+      text-decoration: none;
+      color: $dark-blue
+    }
+    a:visited,
+    a:active {
+      text-decoration: none;
+    }

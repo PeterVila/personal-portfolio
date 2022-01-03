@@ -1,9 +1,11 @@
 @import "/src/components/sassStyles/variables";
 
 .contact {
+  margin-top: 3rem;
   margin-bottom: 5rem;
   h1 {
     text-align: center;
+    color: $dark-blue;
   }
   &__form {
     display: flex;
@@ -24,6 +26,7 @@
       border: none;
       background-color: $dark-blue;
       padding: 1rem 2rem;
+      font-size: 1rem;
       color: $default;
       margin: 1rem auto;
       &:hover {

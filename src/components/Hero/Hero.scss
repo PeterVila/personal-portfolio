@@ -11,13 +11,13 @@
 .hero {
   justify-content: center;
   padding: 2rem 0;
-  margin: 4rem auto;
+  margin: 2.5rem auto;
   &__text {
     flex-basis: 60%;
     align-items: center;
     h3 {
       color: $dark-blue;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       margin: 0.5rem auto;
       animation: fadeIn ease-in-out 0.7s;
     }
@@ -31,7 +31,6 @@
       font-size: 2rem;
       margin: 0.75rem 0;
       animation: fadeIn ease-in-out 0.8s;
-
     }
     &-buttons {
       margin-left: 1rem;
