@@ -14,7 +14,7 @@ const Projects = () => {
               className="animated"
               src="https://i.gyazo.com/7dd227ac9cefd4a5f57815f7ea761d7e.png"
             />
-            <img src="http://localhost:3000/PeterVila/personal-portfolio/static/media/social-litegif.e28ba6e7f5b50f97e874.gif" />
+            <img src={socialGif} />
           </div>
           <h2>Social-Lite</h2>
           <p>

@@ -19,8 +19,9 @@
       }
     }
     input[type="text"],
-    input[type="email"] {
-      padding: 0.4rem;
+    input[type="email"],
+    textarea {
+      padding: 0.7rem;
       text-align: left;
     }
     input, textarea {
@@ -29,6 +30,8 @@
       border: 1px solid grey;
       font-size: 13px;
       width: 90%;
+      font-family: sans-serif;
+
     }
     input[type="submit"] {
       border: none;
