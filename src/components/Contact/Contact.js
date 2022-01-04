@@ -28,10 +28,10 @@ const Contact = () => {
         <h2>Contact Me!</h2>
         <form onSubmit={sendEmail}>
           <div className="row">
-            <input type="text" placeholder="Name" name="from_name" />
+            <input type="text" placeholder="Name" name="name" />
           </div>
           <div className="row">
-            <input type="email" placeholder="Email Address" name="from_email" />
+            <input type="email" placeholder="Email Address" name="email" />
           </div>
           <div className="row">
             <input type="text" placeholder="Subject" name="subject" />
