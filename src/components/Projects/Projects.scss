@@ -38,6 +38,7 @@
           transition: 0.4s opacity;
           left: 0;
           width: 100%;
+          filter: brightness(100%);
         }
         .animated:hover {
           opacity: 0;
@@ -62,7 +63,7 @@
       }
       p {
         font-size: 14px;
-        color: $default-med;
+        color: $default;
       }
       h2 {
         font-size: 1.25rem;
@@ -114,6 +115,20 @@
         &:hover {
           cursor: pointer;
           background-color: $hover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    .project {
+      &__card {
+        &-img {
+          .animated {
+            filter: brightness(70%)
+          }
         }
       }
     }

@@ -29,9 +29,12 @@ nav {
       a:visited {
       color: white;
       text-decoration: none;
+      font-weight: bold;
+      transition: all 0.4s ease-in;
       }
       a:hover {
-        color: $hover;
+        transition: all 0.2s ease-out;
+        box-shadow:  0 -1px 0 0 $hover inset, 0 -2px 0 0 $hover inset ;
       }
     }
   }
@@ -43,9 +46,18 @@ nav {
   }
 }
 
-#about,
 #projects,
 #technical,
 #contact {
   scroll-margin-top: 65px;
+}
+
+#about {
+  scroll-margin-top: 10000px;
+}
+
+.header {
+  color: $hover !important;
+  text-decoration: underline;
+  transition: text-decoration 0.2s;
 }
