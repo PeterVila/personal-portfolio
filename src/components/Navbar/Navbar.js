@@ -13,10 +13,7 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
         </li>
         <li className="navbar-list__item">
-          <a href="#technical">Technical Skills</a>
-        </li>
-        <li className="navbar-list__item">
-          <a href="#tools">Tools</a>
+          <a href="#technical">Skills and Tools</a>
         </li>
         <li className="navbar-list__item">
           <a href="#contact" target="_self">

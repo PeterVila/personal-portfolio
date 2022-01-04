@@ -23,9 +23,9 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <div className="contact container" data-aos="fade-up">
-      <h1 id="contact">Contact me!</h1>
-      <section className="container contact__form">
+    <div id="contact" className="contact container row" data-aos="fade-up">
+      <section className="container contact__form contact-half">
+        <h2>Contact Me!</h2>
         <form onSubmit={sendEmail}>
           <div className="row">
             <input type="text" placeholder="Name" name="from_name" />
@@ -49,6 +49,36 @@ const Contact = () => {
           </div>
         </form>
       </section>
+      <div className="contact-half contact-me">
+        <h2>Contact Info</h2>
+        <div className="row contacts">
+          <div className="contact-image">
+            <img src="https://visualpharm.com/assets/198/Location-595b40b85ba036ed117da637.svg" />
+          </div>
+          <div className="contact-info">
+            <p className="contact-info-headers">Location</p>
+            <p>Los Angeles County, CA</p>
+          </div>
+        </div>
+        <div className="row contacts">
+          <div className="contact-image">
+            <img src="https://visualpharm.com/assets/616/Callback-595b40b65ba036ed117d3880.svg" />
+          </div>
+          <div className="contact-info">
+            <p className="contact-info-headers">Phone</p>
+            <p>(626) 848-3055</p>
+          </div>
+        </div>
+        <div className="row contacts">
+          <div className="contact-image">
+            <img src="https://visualpharm.com/assets/499/Mail-595b40b75ba036ed117d9f3d.svg" />
+          </div>
+          <div className="contact-info">
+            <p className="contact-info-headers">Email</p>
+            <p>peterdvila@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

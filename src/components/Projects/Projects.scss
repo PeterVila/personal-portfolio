@@ -37,9 +37,11 @@
           position: absolute;
           transition: 0.4s opacity;
           left: 0;
+          width: 100%;
         }
         .animated:hover {
           opacity: 0;
+          object-fit: fill;
         }
       }
       img {

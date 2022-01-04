@@ -44,7 +44,8 @@ body {
 }
 
 .column-full,
-.column-half {
+.column-half,
+.contact-half {
   width: 100%;
 }
 
@@ -66,6 +67,10 @@ body {
   }
 
   .column-half {
-    width: 31%;
+    width: 30.5%;
+  }
+
+  .contact-half {
+    width: 30%;
   }
 }

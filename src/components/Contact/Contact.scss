@@ -3,11 +3,12 @@
 .contact {
   margin-top: 3rem;
   margin-bottom: 5rem;
-  h1 {
+  h2 {
     text-align: center;
     color: $dark-blue;
   }
   &__form {
+    width: 70%;
     form {
       display: flex;
       flex-wrap: wrap;
@@ -42,21 +43,42 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 768px) {
-.contact {
-  &__form {
-    form {
-      display: flex;
-      flex-wrap: wrap;
-      div input,
-      div textarea{
-        width: 60%;
-        display: flex;
-        justify-content: center;
+  .contact-me {
+    p {
+    }
+    h2 {
+      color: $dark-blue;
+    }
+    .contacts {
+      justify-content: space-around;
+      align-items: center;
+      .contact-image {
+        width: 18%;
+      }
+      .contact-info {
+        width: 50%;
+        &-headers {
+          color: $med-blue;
+          font-weight: 700;
+        }
       }
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .contact {
+    &__form {
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        div input,
+        div textarea{
+          width: 60%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

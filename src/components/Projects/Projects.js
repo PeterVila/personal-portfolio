@@ -5,10 +5,8 @@ import journalGif from "./codeGif.gif";
 
 const Projects = () => {
   return (
-    <section className="projects">
-      <h1 id="projects" data-aos="fade-up">
-        Projects
-      </h1>
+    <section id="projects" className="projects">
+      <h1 data-aos="fade-up">Projects</h1>
       <div className="project container">
         <div className="project__card column-half" data-aos="fade-up">
           <div className="project__card-img">

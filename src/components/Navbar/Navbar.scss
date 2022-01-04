@@ -42,3 +42,10 @@ nav {
     display: flex !important;
   }
 }
+
+#about,
+#projects,
+#technical,
+#contact {
+  scroll-margin-top: 65px;
+}
