@@ -30,6 +30,7 @@
       font-size: 1rem;
       animation: fadeIn ease-in-out 0.9s;
       font-weight: 300;
+      margin-bottom: 1rem;
     }
     span {
       color: $med-blue;
@@ -55,7 +56,9 @@
       .resume {
         font-size: 1.2rem;
         padding: 1rem 2rem;
-        color: white;
+        a {
+          color: white;
+        }
         border: none;
         border-radius: 8rem;
         background-color: $dark-blue;
@@ -66,10 +69,12 @@
           background-color: rgb(0, 49, 95);
         }
     }
+      .socials {
+        margin-left: 1.8rem;
+      }
       svg {
         width: 40px;
         transition: transform 0.1s;
-        margin-left: 2rem;
         &:hover {
           transform: scale(1.08);
           .fill {

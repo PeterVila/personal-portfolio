@@ -57,14 +57,15 @@
       p,
       h2,
       h3 {
-        padding-left: 1.2rem;
-        padding-right: 1.2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         color: $default;
         margin: 0;
       }
       p {
         font-size: 14px;
         color: $default;
+        text-align: justify;
       }
       h2 {
         font-size: 1.25rem;

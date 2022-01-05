@@ -16,8 +16,8 @@
 }
 *::-webkit-scrollbar-thumb {
   background-color: $med-blue;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
-  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35);
 }
 html {
   font-family: 'Noto Sans JP', sans-serif;

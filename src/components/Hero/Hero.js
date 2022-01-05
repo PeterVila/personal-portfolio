@@ -5,7 +5,6 @@ import Resume from "./resume.pdf";
 
 const Hero = () => {
   return (
-    // Container needed for each component under navbar
     <section id="about" className="hero container">
       <div className="hero__image">
         <img
@@ -24,20 +23,21 @@ const Hero = () => {
         </h2>
         <h2>
           I'm skilled in languages such as JavaScript, React.js, Node.js,
-          Express, PostgreSQL and Sass. I'm also intimately familiar with
+          PostgreSQL and Sass. I'm also intimately familiar with
           tools like Git, npm, Babel, Figma and Webpack.
         </h2>
         <h2>
-          Feel free to connect with me! Let's talk about Web Dev, keyboards, video
-          games, cooking, or how I can assist your team or business!
+          Feel free to connect with me! Let's talk about web development, keyboards, video
+          games, cooking or how I can assist your team or business!
         </h2>
         <div className="hero__text-buttons">
-            <a href={Resume} download="Peter_Vila_Resume">
           <button className="resume">
+            <a href={Resume} download="Peter_Vila_Resume">
             Resume
-            </button>
             </a>
+            </button>
           <a
+            className="socials"
             target="_blank"
             href="https://github.com/PeterVila"
             rel="noreferrer"
@@ -54,6 +54,7 @@ const Hero = () => {
             </svg>
           </a>
           <a
+            className="socials"
             target="_blank"
             href="https://www.linkedin.com/in/peterdvila/"
             rel="noreferrer"
@@ -80,7 +81,7 @@ export default Hero;
 
 const Typer = () => {
     const [count, setCount] = useState(1);
-    const messages = ['Full Stack Web Developer', 'Coder', 'Tech Enthusiast'];
+    const messages = ['Full Stack Web Developer', 'Software Engineer', 'Tech Enthusiast'];
     useEffect(() => {
       setCount(1);
     }, [count]);
