@@ -72,7 +72,7 @@ const Contact = () => {
         <h2>Contact Info</h2>
         <div className="row contacts">
           <div className="contact-image">
-            <img src="https://visualpharm.com/assets/198/Location-595b40b85ba036ed117da637.svg" />
+            <img src="https://visualpharm.com/assets/198/Location-595b40b85ba036ed117da637.svg" alt="world"/>
           </div>
           <div className="contact-info">
             <p className="contact-info-headers">Location</p>
@@ -81,7 +81,7 @@ const Contact = () => {
         </div>
         <div className="row contacts">
           <div className="contact-image">
-            <img src="https://visualpharm.com/assets/616/Callback-595b40b65ba036ed117d3880.svg" />
+            <img src="https://visualpharm.com/assets/616/Callback-595b40b65ba036ed117d3880.svg" alt="phone"/>
           </div>
           <div className="contact-info">
             <p className="contact-info-headers">Phone</p>
@@ -90,7 +90,7 @@ const Contact = () => {
         </div>
         <div className="row contacts">
           <div className="contact-image">
-            <img src="https://visualpharm.com/assets/499/Mail-595b40b75ba036ed117d9f3d.svg" />
+            <img src="https://visualpharm.com/assets/499/Mail-595b40b75ba036ed117d9f3d.svg" alt="contact"/>
           </div>
           <div className="contact-info">
             <p className="contact-info-headers">Email</p>

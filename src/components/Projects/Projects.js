@@ -1,9 +1,9 @@
-import React from "react";
 import "./Projects.scss";
 import socialGif from "./social-litegif.gif";
 import journalGif from "./codeGif.gif";
 
 const Projects = () => {
+
   return (
     <section id="projects" className="projects">
       <h1 data-aos="fade-up">Projects</h1>

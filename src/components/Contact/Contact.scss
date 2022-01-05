@@ -9,7 +9,7 @@
     font-size: 1.8rem;
   }
   &__form {
-    width: 70%;
+    width: 55%;
     form {
       display: flex;
       flex-wrap: wrap;
@@ -55,10 +55,10 @@
       font-size: 1.8rem;
     }
     .contacts {
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       .contact-image {
-        width: 18%;
+        width: 16%;
       }
       .contact-info {
         width: 50%;
@@ -79,7 +79,7 @@
         flex-wrap: wrap;
         div input,
         div textarea{
-          width: 60%;
+          width: 80%;
           display: flex;
           justify-content: center;
         }
