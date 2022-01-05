@@ -13,8 +13,9 @@ const Projects = () => {
             <img
               className="animated"
               src="https://i.gyazo.com/7dd227ac9cefd4a5f57815f7ea761d7e.png"
+              alt="Social-Lite"
             />
-            <img src={socialGif} />
+            <img src={socialGif} alt="animated Social-Lite Gif"/>
           </div>
           <h2>Social-Lite</h2>
           <p>
@@ -54,8 +55,11 @@ const Projects = () => {
             <img
               className="animated"
               src="https://i.gyazo.com/eb606057ab20e6691436d5fb410ae4df.png"
+              alt="Who's that Pokemon"
             />
-            <img src="https://user-images.githubusercontent.com/42393951/143111026-f15628c1-9c1c-42b8-ba0c-45a8f648dfb4.gif" />
+            <img
+              alt="Who's that Pokemon animated"
+              src="https://user-images.githubusercontent.com/42393951/143111026-f15628c1-9c1c-42b8-ba0c-45a8f648dfb4.gif" />
           </div>
           <h2>Who's that Pokemon</h2>
           <p>
@@ -92,8 +96,9 @@ const Projects = () => {
             <img
               className="animated"
               src="https://i.gyazo.com/aaac310a1411d7b7ecdf61e82f612434.png"
+              alt="Code Journal"
             />
-            <img src={journalGif} />
+            <img src={journalGif} alt="Code Journal"/>
           </div>
           <h2>Code Journal</h2>
           <p>

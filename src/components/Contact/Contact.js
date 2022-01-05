@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Contact.scss";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+
+  const [isUpdating, setIsUpdating] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -14,14 +18,22 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-        },
+    setIsUpdating(true);
+    setIsUpdating(false);
+    setShowAlert(true); // setting to true to display hte alert
+      },
         (error) => {
           console.log(error.text);
         }
       );
     e.target.reset();
   };
+
+  let alertClass = showAlert ? "modal-alert animate" : "modal-alert";
+  let alertStyles = showAlert
+    ? {}
+    : { opacity: 0, visibility: "hidden", pointerEvents: "none" };
+
   return (
     <div id="contact" className="contact container row" data-aos="fade-up">
       <section className="container contact__form contact-half">
@@ -47,6 +59,13 @@ const Contact = () => {
           <div className="row">
             <input type="submit" value="Send Message"></input>
           </div>
+          <section
+            className={alertClass}
+            style={alertStyles}
+            variant='success'
+          >
+            Thanks for the message!
+          </section>
         </form>
       </section>
       <div className="contact-half contact-me">

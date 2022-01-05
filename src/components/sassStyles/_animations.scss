@@ -14,3 +14,40 @@
   0% {opacity:0; transform:translate((0))}
   100% {opacity:1; transform: translate((0));}
 }
+
+.modal-alert {
+  background-color: $med-blue;
+  color: white;
+  border-radius: 5rem;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.submit-button {
+  cursor: pointer;
+  background: blue;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 1em;
+  &:hover {
+    background: darkblue;
+  }
+}
+
+@keyframes FadeAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.animate {
+  animation: FadeAnimation 2s ease-in .0s forwards;
+}
