@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./Hero.scss";
+import Typist from "react-typist";
 
 const Hero = () => {
   return (
@@ -12,8 +13,10 @@ const Hero = () => {
         />
       </div>
       <div className="hero__text">
-        <h3>Hello! I'm Peter Vila</h3>
-        <h1>Full Stack Web Developer</h1>
+        <h3>Hello! I'm Peter Vila </h3>
+        <div className="first-typist">
+          <Typer />
+        </div>
         <h2>
           I'm a Software Developer with a passion for technology, coding, and
           creating digital art!
@@ -24,7 +27,7 @@ const Hero = () => {
           tools like Git, Babel, npm, and Webpack.
         </h2>
         <h2>
-          Feel free to connect with me! Let's talk about web dev, tech video
+          Feel free to connect with me! Let's talk about web dev, tech, video
           games, cooking, or how I can assist your team or business! I'd love to
           meet more developers and expand my network.
         </h2>
@@ -70,3 +73,31 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const Typer = () => {
+    const [count, setCount] = useState(1);
+    const messages = ['Full Stack Developer', 'Coder', 'Tech Enthusiast'];
+    useEffect(() => {
+      setCount(1);
+    }, [count]);
+  return (
+    <>
+      {count && (
+        <Typist
+          avgTypingDelay={70}
+          startDelay={800}
+          onTypingDone={() => setCount(0)}
+        >
+          {messages.map((msg, index) => {
+            return (
+              <span key={index}>
+                {msg}
+                <Typist.Backspace count={msg.length} delay={1500} />
+              </span>
+            );
+          })}
+        </Typist>
+      )}
+    </>
+  );
+}

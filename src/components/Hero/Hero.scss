@@ -18,7 +18,6 @@
   &__text {
     flex-basis: 90%;
     justify-content: space-between;
-    align-items: center;
     padding: 0 4rem;
     h3 {
       color: $dark-blue;
@@ -30,6 +29,17 @@
       color: $default-dark;
       font-size: 1rem;
       animation: fadeIn ease-in-out 0.9s;
+      font-weight: 300;
+    }
+    span {
+      color: $med-blue;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .first-typist {
+      animation: fadeIn ease-in-out 0.8s;
+      text-align: left;
     }
     h1 {
       color: $med-blue;
@@ -59,7 +69,7 @@
       svg {
         width: 40px;
         transition: transform 0.1s;
-        margin-left: 1rem;
+        margin-left: 2rem;
         &:hover {
           transform: scale(1.08);
           .fill {

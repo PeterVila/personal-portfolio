@@ -1,4 +1,5 @@
 @import "/src/components/sassStyles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 nav {
   display: none !important;
@@ -13,12 +14,18 @@ nav {
   box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.8);
   font-size: 1.2rem;
   .navbar-title {
+    font-family: 'Cookie', cursive;
+    font-weight: 200;
+    font-size: 2.8rem;
+    letter-spacing: 2.5px;
+    animation: fade 0.3s;
     text-align: center;
     width: calc(100% * (1/4));
     margin: 0;
     align-self: center;
   }
   .navbar-list {
+    animation: fade 0.3s;
     display: flex;
     list-style-type: none;
     width: calc(100% * (3/4));
