@@ -1,15 +1,17 @@
 import React, {useState, useEffect} from "react";
 import "./Hero.scss";
 import Typist from "react-typist";
-import Resume from "./resume.pdf";
+import Peter from "./peter.JPG";
 
 const Hero = () => {
   return (
     <section id="about" className="hero container">
+      <div className="background">
+      </div>
       <div className="hero__image">
         <img
-          src="https://buildyourspechere.com/wp-content/uploads/2020/10/placeholder-image-person-jpg.jpg"
-          alt="placeholder"
+          src={Peter}
+          alt="Peter Vila"
         />
       </div>
       <div className="hero__text">
@@ -18,24 +20,25 @@ const Hero = () => {
           <Typer />
         </div>
         <h2>
-          I'm a Full Stack Web Developer with a passion for technology, coding, and
-          creating digital art!
+          I'm a Full Stack Web Developer with a passion for technology, coding,
+          and creating digital art!
         </h2>
         <h2>
           I'm skilled in languages such as JavaScript, React.js, Node.js,
-          PostgreSQL and Sass. I'm also intimately familiar with
-          tools like Git, npm, Babel, Figma and Webpack.
+          PostgreSQL and Sass. I'm also intimately familiar with tools like Git,
+          npm, Babel, Figma and Webpack.
         </h2>
         <h2>
-          Feel free to connect with me! Let's talk about web development, keyboards, video
-          games, cooking or how I can assist your team or business!
+          Feel free to connect with me! Let's talk about web development,
+          keyboards, video games, cooking or how I can assist your team or
+          business!
         </h2>
         <div className="hero__text-buttons">
+            <a href="https://drive.google.com/file/d/1OXDVjHqbNEL2Jrs8mT4W-vYZuBPUs6hS/view?usp=sharing" target="_blank" rel="noreferrer">
           <button className="resume">
-            <a href={Resume} download="Peter_Vila_Resume">
-            Resume
+              Resume
+          </button>
             </a>
-            </button>
           <a
             className="socials"
             target="_blank"
